@@ -1,0 +1,117 @@
+.partenairs {
+     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.partenairs__title {
+    color: #022179;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.partenairs__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.partenairs__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15px 30px;
+    width: 200px;
+}
+/* 
+.partenairs__item img {
+    height: 100px;
+    width: 100%;
+}
+
+.partenairs__item p {
+    color: #022179;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partenairs__item p span {
+    color: #A42593;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partenairs__item p a {
+    color: #022179;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partenairs__item p a span {
+    color: #A42593;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partenairs__item p a:hover {
+    color: #A42593;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partenairs__item p a:hover span {
+    color: #022179;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partenairs__item p span:hover {
+    color: #022179;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partenairs__item p span:hover a {
+    color: #A42593;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.partenairs__item p span:hover a span {
+    color: #022179;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+} */
+

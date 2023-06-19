@@ -1,7 +1,11 @@
 import heroImg from '../../img/heros_img.png';
 import './HeroSection.css';
 
+
+
+
 const HeroSection = () => {
+   
      return (
           <div className="hero-container">
               <div className="hero__text">
@@ -16,18 +20,10 @@ const HeroSection = () => {
                          votre entreprise.
                     </p>
                     <div className="hero__btn">
-                         <button
-                              className='btns'
-                              buttonStyle='btn--outline'
-                              buttonSize='btn--large'
-                         >
+                         <button className='btns'>
                               Commencer
                          </button>
-                         <button
-                              className='btns-2'
-                              buttonStyle='btn--outline'
-                              buttonSize='btn--large'
-                         >
+                         <button className='btns-2'>
                               Commencer
                          </button>
                     </div>

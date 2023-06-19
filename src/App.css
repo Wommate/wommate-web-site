@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 .App {
   text-align: center;
+ 
 }
 
 .header {
   margin-top: 0 !important;
+}
+
+
+.h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #022179;
+  text-align: center;
+  margin: 10% auto;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  border-bottom: 2px solid #A42593;
+  
 }
