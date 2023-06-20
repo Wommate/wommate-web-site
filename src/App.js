@@ -17,6 +17,7 @@ function App() {
         <HeroSection />
         <About />
         <OurServices/>
+        <About/>
         <Footer/>
 
         <Partenairs />

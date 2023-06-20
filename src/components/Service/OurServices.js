@@ -1,19 +1,14 @@
 import React, { useState } from 'react';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 import './OurServices.css';
+
 
 const cardsData = [
   {
     id: 1,
     title: 'Service 1',
-    /* image: 'path/to/image-1.jpg', */
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet semper nibh, in gravida elit. Sed ut ipsum vitae urna efficitur aliquam id in lacus. Sed sed gravida est. Fusce pharetra, velit at sagittis fermentum, dui neque aliquam justo, a porta tortor sapien vitae risus. Fusce faucibus, sapien eget convallis ullamcorper, tortor dui feugiat ipsum, nec congue lorem mi eget nisi. Vestibulum et efficitur elit, at eleifend dui. Ut et convallis ante, vitae feugiat sapien. Curabitur ultrices vulputate justo. Quisque bibendum venenatis nisl, sit amet scelerisque nisl imperdiet in. Mauris vestibulum sem id eleifend semper. Fusce sollicitudin elementum arcu, at viverra eros consequat non. Nam id neque enim. Aliquam tristique turpis a ante efficitur fermentum. Mauris eu magna ac tellus ullamcorper fringilla at id justo.',
   },
-  // Ajoutez les autres données pour les 10 cartes restantes
   {
     id: 2,
     title: 'Service 2',
@@ -26,7 +21,6 @@ const cardsData = [
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet semper nibh, in gravida elit. Sed ut ipsum vitae urna efficitur aliquam id in lacus. Sed sed gravida est. Fusce pharetra, velit at sagittis fermentum, dui neque aliquam justo, a porta tortor sapien vitae risus. Fusce faucibus, sapien eget convallis ullamcorper, tortor dui feugiat ipsum, nec congue lorem mi eget nisi. Vestibulum et efficitur elit, at eleifend dui. Ut et convallis ante, vitae feugiat sapien. Curabitur ultrices vulputate justo. Quisque bibendum venenatis nisl, sit amet scelerisque nisl imperdiet in. Mauris vestibulum sem id eleifend semper. Fusce sollicitudin elementum arcu, at viverra eros consequat non. Nam id neque enim. Aliquam tristique turpis a ante efficitur fermentum. Mauris eu magna ac tellus ullamcorper fringilla at id justo.',
   },
-  // Ajoutez les autres données pour les 10 cartes restantes
   {
     id: 4,
     title: 'Service 4',
@@ -48,24 +42,18 @@ const OurServices = () => {
 
   return (
     <div>
-      <Typography variant="h4" component="h1" className="titleServices">
-        Nos Services
-      </Typography>
+      <h1 className="titleServices">Nos Services</h1>
       <div className="containerServices">
         {cardsData.map((card) => (
-          <Card key={card.id} className="card">
-            <CardContent className="cardContent">
+          <div key={card.id} className="card">
+            <div className="cardContent">
               {/* <img src={card.image} alt={card.title} className="profileImage" /> */}
-            <div className='imageCarte'>
-              {/* image a cote du titre de chaque catre */}
-              <div className='img'></div>
-              <Typography variant="h6" component="h2">
-                {card.title}
-              </Typography>
-            </div>
-              <Typography
-                variant="body2"
-                component="p"
+              <div className="imageCarte">
+                {/* image à côté du titre de chaque carte */}
+                <div className="img"></div>
+                <h2 className="cardTitle">{card.title}</h2>
+              </div>
+              <p
                 className={
                   expandedCards.includes(card.id) ? 'contentExpanded' : 'contentTruncated'
                 }
@@ -75,19 +63,17 @@ const OurServices = () => {
                   : `${card.content.slice(0, 400)}${
                       card.content.length > 400 ? '...' : ''
                     }`}
-              </Typography>
+              </p>
               {card.content.length > 400 && (
-                <Button
-                  className="button"
-                  color="primary"
-                  variant="contained"
+                <button
+                  className="buttonLirePlus"
                   onClick={() => toggleCardExpansion(card.id)}
                 >
                   {expandedCards.includes(card.id) ? 'Lire moins' : 'Lire plus'}
-                </Button>
+                </button>
               )}
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         ))}
       </div>
     </div>
