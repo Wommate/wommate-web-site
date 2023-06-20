@@ -1,0 +1,41 @@
+.containerServices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  
+  
+  .card {
+    margin: 10px;
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: white;
+    text-align: justify;
+   
+  }
+  
+  .cardContent {
+    min-height: 100%;
+    background-color: white;
+    
+  }
+  
+  .contentTruncated {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  .contentExpanded {
+    white-space: normal;
+    overflow: visible;
+    display: block;
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+  
