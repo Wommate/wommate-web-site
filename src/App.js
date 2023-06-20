@@ -11,6 +11,7 @@ function App() {
         <Header />
         <HeroSection />
         <OurServices/>
+        <About/>
         <Footer/>
 
     </div>
