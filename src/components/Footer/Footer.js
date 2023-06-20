@@ -26,7 +26,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h4>wommate Tech</h4>
+          <h4 className='txtLab'>wommate Tech</h4>
           <ul className="social-links">
             <li>
               <a href="#">Nous contacter</a>
@@ -43,7 +43,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="iconRs">
-          <h4>Réseaux Sociaux</h4>
+          <h4 className='txtLab'>Réseaux Sociaux</h4>
           <div className="icon" title='Facebook'>
             <a href="#">
               <FontAwesomeIcon icon={faFacebook} />
@@ -71,7 +71,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-section">
-          <h4>Contact</h4>
+          <h4 className='txtLab'>Contact</h4>
           <p>
             <span className='txtLab'>Email:</span> <a href="mailto:wommateTech@example.com">wommateTech@example.com</a>
           </p>
