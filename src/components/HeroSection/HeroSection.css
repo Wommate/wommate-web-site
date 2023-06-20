@@ -7,10 +7,11 @@
      align-items: center;
      top: 0;
      margin-top: 6%;
-     padding: 3% 4%;
+     padding: 2% 4%;
     z-index: -1;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     background-color: #061746;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
 }
 
 .hero__text {
@@ -47,7 +48,8 @@
      text-align: start;
      line-height: 1.8;
 }
-.hero__text .hero__btn{
+.hero__text .hero__btn{  
+     margin-top: 20px;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
