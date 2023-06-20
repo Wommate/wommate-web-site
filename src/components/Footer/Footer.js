@@ -6,8 +6,21 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h4>À propos</h4>
-          <p>Informations sur l'entreprise et sa mission.</p>
+          <h4>Opportinuté</h4>
+          <ul className="social-links">
+            <li>
+              <a href="#">Nous conntactez</a>
+            </li>
+            <li>
+              <a href="#">Notre Newsteller</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#">A propos</a>
+            </li>
+          </ul>
         </div>
         <div className="footer-section">
           <h4>Réseaux sociaux</h4>

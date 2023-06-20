@@ -1,0 +1,40 @@
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+  }
+  
+  .valuesContainer {
+    width: 50%;
+  }
+  
+  .valuesContainer h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .valuesContainer p {
+    margin-bottom: 16px;
+  }
+  
+  .teamContainer {
+    width: 40%;
+  }
+  
+  .teamContainer h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .teamImages {
+    display: flex;
+  }
+  
+  .teamImages img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  

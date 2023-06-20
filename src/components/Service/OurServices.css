@@ -4,7 +4,7 @@
     justify-content: center;
   }
 
-  
+
   
   .card {
     margin: 10px;
@@ -38,4 +38,18 @@
   .button {
     margin-top: 10px;
   }
+
+
   
+  .imageCarte
+  {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .img{
+    width: 10%;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(98, 7, 255);
+  }
