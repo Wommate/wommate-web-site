@@ -12,15 +12,34 @@ const About = () => {
           Nulla facilisi. Suspendisse sed vulputate turpis. Nam posuere massa id fringilla
           tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
           turpis egestas.
-        </p>
-        <p className='nosValeurs'>
+          Vivamus vulputate sem id est cursus, vitae eleifend neque hendrerit. Duis luctus tempus
+          lacus, non hendrerit elit eleifend eget. Integer vel luctus ex, id viverra metus. Nulla a
+          dolor elit. Proin rhoncus erat vel enim tincidunt, sit amet vestibulum neque scelerisque.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec mauris purus.
+          Nulla facilisi. Suspendisse sed vulputate turpis. Nam posuere massa id fringilla
+          tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas.
+          Vivamus vulputate sem id est cursus, vitae eleifend neque hendrerit. Duis luctus tempus
+          lacus, non hendrerit elit eleifend eget. Integer vel luctus ex, id viverra metus. Nulla a
+          dolor elit. Proin rhoncus erat vel enim tincidunt, sit amet vestibulum neque scelerisque.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec mauris purus.
+          Nulla facilisi. Suspendisse sed vulputate turpis. Nam posuere massa id fringilla
+          tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas.
+          Vivamus vulputate sem id est cursus, vitae eleifend neque hendrerit. Duis luctus tempus
+          lacus, non hendrerit elit eleifend eget. Integer vel luctus ex, id viverra metus. Nulla a
+          dolor elit. Proin rhoncus erat vel enim tincidunt, sit amet vestibulum neque scelerisque.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec mauris purus.
+          Nulla facilisi. Suspendisse sed vulputate turpis. Nam posuere massa id fringilla
+          tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas.
           Vivamus vulputate sem id est cursus, vitae eleifend neque hendrerit. Duis luctus tempus
           lacus, non hendrerit elit eleifend eget. Integer vel luctus ex, id viverra metus. Nulla a
           dolor elit. Proin rhoncus erat vel enim tincidunt, sit amet vestibulum neque scelerisque.
         </p>
       </div>
       <div className="teamContainer">
-        <h2>Notre équipe</h2>
+        <h2>Équipe</h2>
         <div className="teamImages">
             <div className="hero__img">
                     <img src={heroImg} alt="hero_img" />
