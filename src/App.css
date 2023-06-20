@@ -1,7 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
 .App {
   text-align: center;
+  
+ 
 }
 
+*{
+  overflow-y: visible;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 .header {
   margin-top: 0 !important;
+}
+
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #022179;
+  text-align: center;
+  margin: 5% auto;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #A42593;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  line-height: 1.8;
+
 }

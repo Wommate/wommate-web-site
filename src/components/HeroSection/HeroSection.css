@@ -4,10 +4,14 @@
 .hero-container{
      display: flex;
      justify-content: space-around;
+     align-items: center;
      top: 0;
      margin-top: 6%;
-     padding: 3% 4%;
-     background-color: #022179;
+     padding: 2% 4%;
+    z-index: -1;
+    height: calc(100vh - 100px);
+    background-color: #061746;
+    clip-path: polygon(0 0, 100% 0, 100% 94%, 0% 100%);
 }
 
 .hero__text {
@@ -44,7 +48,8 @@
      text-align: start;
      line-height: 1.8;
 }
-.hero__text .hero__btn{
+.hero__text .hero__btn{  
+     margin-top: 20px;
      display: flex;
      flex-direction: row;
      justify-content: space-between;
@@ -86,13 +91,16 @@
 
 .hero__img {
      width: 50%;
-     height: 90%;
+     height: 100%;
+     align-items: center;
 }
 
 .hero__img img {
      width: 70%;
-     height: 50%;
+     height: 70%;
      object-fit: cover;
+     margin: 5% auto;
+     
 }
 
 @media screen and (max-width: 768px) {

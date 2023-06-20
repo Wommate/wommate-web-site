@@ -1,0 +1,69 @@
+.partenairs {
+     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+
+}
+
+.partenairs__title {
+    color: #022179;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.partenairs__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    overflow-x: auto !important;
+    overflow-y: hidden;
+    height: 150px;
+}
+
+.partenairs__content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    height: 7PX;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #A42593; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #A42593; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #022179; 
+  }
+

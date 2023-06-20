@@ -5,13 +5,22 @@ import OurServices from './components/Service/OurServices';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 
+import Partenairs from './components/Partenairs/Partenairs';
+import Apropos from './components/Apropos/Apropos';
+
+
 function App() {
   return (
     <div className="App">
+      
         <Header />
         <HeroSection />
+        <About />
         <OurServices/>
         <Footer/>
+
+        <Partenairs />
+        <Apropos />
 
     </div>
   );
