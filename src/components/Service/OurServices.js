@@ -5,19 +5,19 @@ import './OurServices.css';
 const cardsData = [
   {
     id: 1,
-    title: 'Service 1',
+    title: 'Formations et certifications sur le numérique',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet semper nibh, in gravida elit. Sed ut ipsum vitae urna efficitur aliquam id in lacus. Sed sed gravida est. Fusce pharetra, velit at sagittis fermentum, dui neque aliquam justo, a porta tortor sapien vitae risus. Fusce faucibus, sapien eget convallis ullamcorper, tortor dui feugiat ipsum, nec congue lorem mi eget nisi. Vestibulum et efficitur elit, at eleifend dui. Ut et convallis ante, vitae feugiat sapien. Curabitur ultrices vulputate justo. Quisque bibendum venenatis nisl, sit amet scelerisque nisl imperdiet in. Mauris vestibulum sem id eleifend semper. Fusce sollicitudin elementum arcu, at viverra eros consequat non. Nam id neque enim. Aliquam tristique turpis a ante efficitur fermentum. Mauris eu magna ac tellus ullamcorper fringilla at id justo.',
   },
   {
     id: 2,
-    title: 'Service 2',
+    title: 'Accompagnement des PMEs dans la digitalisation',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet semper nibh, in gravida elit. Sed ut ipsum vitae urna efficitur aliquam id in lacus. Sed sed gravida est. Fusce pharetra, velit at sagittis fermentum, dui neque aliquam justo, a porta tortor sapien vitae risus. Fusce faucibus, sapien eget convallis ullamcorper, tortor dui feugiat ipsum, nec congue lorem mi eget nisi. Vestibulum et efficitur elit, at eleifend dui. Ut et convallis ante, vitae feugiat sapien. Curabitur ultrices vulputate justo. Quisque bibendum venenatis nisl, sit amet scelerisque nisl imperdiet in. Mauris vestibulum sem id eleifend semper. Fusce sollicitudin elementum arcu, at viverra eros consequat non. Nam id neque enim. Aliquam tristique turpis a ante efficitur fermentum. Mauris eu magna ac tellus ullamcorper fringilla at id justo.',
   },
   {
     id: 3,
-    title: 'Service 3',
+    title: 'Services de développement logiciel',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet semper nibh, in gravida elit. Sed ut ipsum vitae urna efficitur aliquam id in lacus. Sed sed gravida est. Fusce pharetra, velit at sagittis fermentum, dui neque aliquam justo, a porta tortor sapien vitae risus. Fusce faucibus, sapien eget convallis ullamcorper, tortor dui feugiat ipsum, nec congue lorem mi eget nisi. Vestibulum et efficitur elit, at eleifend dui. Ut et convallis ante, vitae feugiat sapien. Curabitur ultrices vulputate justo. Quisque bibendum venenatis nisl, sit amet scelerisque nisl imperdiet in. Mauris vestibulum sem id eleifend semper. Fusce sollicitudin elementum arcu, at viverra eros consequat non. Nam id neque enim. Aliquam tristique turpis a ante efficitur fermentum. Mauris eu magna ac tellus ullamcorper fringilla at id justo.',
   },
@@ -64,14 +64,16 @@ const OurServices = () => {
                       card.content.length > 400 ? '...' : ''
                     }`}
               </p>
-              {card.content.length > 400 && (
-                <button
-                  className="buttonLirePlus"
-                  onClick={() => toggleCardExpansion(card.id)}
-                >
-                  {expandedCards.includes(card.id) ? 'Lire moins' : 'Lire plus'}
-                </button>
-              )}
+              <span id='lirePlus'>
+                {card.content.length > 400 && (
+                  <button
+                    className="buttonLirePlus"
+                    onClick={() => toggleCardExpansion(card.id)}
+                  >
+                    {expandedCards.includes(card.id) ? 'Lire moins' : 'Lire plus'}
+                  </button>
+                )}
+              </span>
             </div>
           </div>
         ))}

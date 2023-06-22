@@ -5,9 +5,10 @@
 }
 
 .containerServices {
+  margin: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
 .card {
@@ -54,13 +55,28 @@
 .contentExpanded {
   white-space: pre-wrap;
 }
+#lirePlus{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lirePlus:hover{
+  width: 100%;
+}
 
 .buttonLirePlus {
-  background-color: #007bff;
+  background-color: #022179;
   color: #fff;
   border: none;
   border-radius: 4px;
   padding: 8px 12px;
   margin-top: 10px;
   cursor: pointer;
+  width: 30%;
+  font-weight: bold;
 }
+.buttonLirePlus:hover {
+  background-color: #A42593;
+  /* width: 100%; */
+}
+
