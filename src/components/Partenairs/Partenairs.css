@@ -26,11 +26,35 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
-    overflow-x: auto !important;
-    overflow-y: hidden;
+    width: 100%;
     height: 150px;
+}
+.slide-btn {
+  background-color: transparent;
+  width: 50PX;
+  position: relative;
+  height: 50PX;
+  border-radius: 50%;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+.slide-btn img {
+  position: absolute;
+  width: 50px !important;
+  height: 50PX !important;
+}
+.partenairs__img {
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 20px;
 }
 
 .partenairs__content img {

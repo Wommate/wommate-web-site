@@ -1,6 +1,32 @@
 import React from 'react';
 import './About.css';
-import heroImg from '../../img/heros_img.png';
+import libscode from '../../img/libscode.png'
+import bella from '../../img/bella.png'
+import oumar from '../../img/oumar.png'
+
+
+const teams = [
+  {
+  id: 1,
+  nom: 'Oumar DIAGNE',
+  photo: oumar,
+  poste: 'Développeur web IOT, ingénieur SI',
+
+  },
+  {
+    id: 2,
+    nom: 'Maimouna DIALLO',
+    photo: bella,
+    poste: 'Développeur web, coach formatrice',
+  },
+  {
+    id: 3,
+    nom: 'Libasse THIAM',
+    photo: libscode,
+    poste: 'Développeur web, ingénieur SI',
+  },
+
+]
 
 const About = () => {
   return (
@@ -8,49 +34,26 @@ const About = () => {
       <div className="valuesContainer">
         <h2>Nos valeurs</h2>
         <p className='nosValeurs'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec mauris purus.
-          Nulla facilisi. Suspendisse sed vulputate turpis. Nam posuere massa id fringilla
-          tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas.
-          Vivamus vulputate sem id est cursus, vitae eleifend neque hendrerit. Duis luctus tempus
-          lacus, non hendrerit elit eleifend eget. Integer vel luctus ex, id viverra metus. Nulla a
-          dolor elit. Proin rhoncus erat vel enim tincidunt, sit amet vestibulum neque scelerisque.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec mauris purus.
-          Nulla facilisi. Suspendisse sed vulputate turpis. Nam posuere massa id fringilla
-          tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas.
-          Vivamus vulputate sem id est cursus, vitae eleifend neque hendrerit. Duis luctus tempus
-          lacus, non hendrerit elit eleifend eget. Integer vel luctus ex, id viverra metus. Nulla a
-          dolor elit. Proin rhoncus erat vel enim tincidunt, sit amet vestibulum neque scelerisque.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec mauris purus.
-          Nulla facilisi. Suspendisse sed vulputate turpis. Nam posuere massa id fringilla
-          tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas.
-          Vivamus vulputate sem id est cursus, vitae eleifend neque hendrerit. Duis luctus tempus
-          lacus, non hendrerit elit eleifend eget. Integer vel luctus ex, id viverra metus. Nulla a
-          dolor elit. Proin rhoncus erat vel enim tincidunt, sit amet vestibulum neque scelerisque.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec mauris purus.
-          Nulla facilisi. Suspendisse sed vulputate turpis. Nam posuere massa id fringilla
-          tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas.
-          Vivamus vulputate sem id est cursus, vitae eleifend neque hendrerit. Duis luctus tempus
-          lacus, non hendrerit elit eleifend eget. Integer vel luctus ex, id viverra metus. Nulla a
-          dolor elit. Proin rhoncus erat vel enim tincidunt, sit amet vestibulum neque scelerisque.
+          Wommate accélère la transition vers le 
+          numérique. Notre mission est d'accompagner 
+          toute personne souhaitant acquérir des 
+          compétences dans les métiers du numérique 
+          afin d'être apte a affronter le monde 
+          professionnel, ou digitaliser son entreprise, 
+          que ce soit au stade de l'idéation ou déjà 
+          en cours de développement.
         </p>
       </div>
       <div className="teamContainer">
-        <h2>Équipe</h2>
+        <h2>Notre équipe</h2>
         <div className="teamImages">
-            <div className="hero__img">
-                    <img src={heroImg} alt="hero_img" />
-            </div>
-            <div className="hero__img">
-                    <img src={heroImg} alt="hero_img" />
-            </div>
-            <div className="hero__img">
-                    <img src={heroImg} alt="hero_img" />
-             </div>
-          {/* Ajoutez les autres images de l'équipe */}
+            {teams.map((team) => (<div className="hero___img">
+                <img src={team.photo} alt="hero_img" />
+                <p className="hero___info">
+                  <span className="hero___name">{team.nom}</span>
+                  <span className="hero___poste">{team.poste}</span>
+                </p>
+            </div>))}
         </div>
       </div>
     </div>

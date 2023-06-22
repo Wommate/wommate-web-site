@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import HeroSection from './components/HeroSection/HeroSection';
-import OurServices from './components/Service/OurServices';
+import OurServices from './components/OurServices/OurServices';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 
@@ -15,13 +15,13 @@ function App() {
       
         <Header />
         <HeroSection />
-        <About />
-        <OurServices/>
-        <About/>
-        <Footer/>
-
         <Partenairs />
         <Apropos />
+        <OurServices/>
+        <About />
+        <Footer/>
+
+        
 
     </div>
   );

@@ -2,14 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 40px;
+    margin:  5% auto;
+    width: 90%;
   }
   
   .valuesContainer {
     width: 50%;
   }
   
-  .valuesContainer h2 {
+  h2 {
     font-size: 24px;
     margin-bottom: 16px;
   }
@@ -22,23 +23,45 @@
     width: 40%;
   }
   
-  .teamContainer h2 {
-    font-size: 24px;
-    margin-bottom: 16px;
-  }
+  
   
   .teamImages {
     display: flex;
   }
-  
-  .teamImages img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 10px;
+  .teamImages .hero__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
   }
+  
+ 
   .nosValeurs
   {
     text-align: justify;
+    text-justify: auto;
+    line-height: 1.8;
+    font-size: 14px;
+    width: 88%;
   }
-  
+  .hero___info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero___img img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+
+  .hero___info .hero___name {
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+  }
+
+  .hero___info .hero___poste {
+    font-size: 12px;
+    color: #A42593;
+  }
