@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import OurServices from './components/OurServices/OurServices';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
-
+import Contact from './components/Contact/Contact';
 import Partenairs from './components/Partenairs/Partenairs';
 import Apropos from './components/Apropos/Apropos';
 
@@ -19,6 +19,7 @@ function App() {
         <Apropos />
         <OurServices/>
         <About />
+        <Contact />
         <Footer/>
 
         

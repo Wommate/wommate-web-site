@@ -29,11 +29,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #A42593;
-  text-align: left;
-  line-height: 1.8;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  color: #A42593 !important;
+  text-align: left !important;
+  line-height: 1.8 !important;
+  font-family: 'Inter', sans-serif !important;
 
 }

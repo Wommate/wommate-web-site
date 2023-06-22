@@ -24,7 +24,7 @@
          
 }
 .apropos__text  p {
-     font-family: 'Roboto', sans-serif;
+     font-family: 'Inter', sans-serif !important;
      font-size: .9rem;
      color: #3d3c3c;
      line-height: 1.5;
