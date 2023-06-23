@@ -36,8 +36,8 @@ const cardsData = [
 const OurServices = () => {
  
   return (
-    <div className='our___service'>
-      <h1 className="h1">Nos Services</h1>
+    <div className='ourService'>
+      <h1 className="h1" id='service'>Nos Services</h1>
       <div className="containerServices">
         {cardsData.map((card) => (
           <div key={card.id} className="card">

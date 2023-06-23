@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import Partenairs from './components/Partenairs/Partenairs';
 import Apropos from './components/Apropos/Apropos';
+import Map from './components/Map/Map';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <OurServices/>
         <About />
         <Contact />
+        <Map/> {/* npm install leaflet react-router-dom react-scroll */}
         <Footer/>
 
         
