@@ -1,6 +1,7 @@
 .aboutContainer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin:  5% auto;
     width: 90%;
@@ -22,8 +23,6 @@
   .teamContainer {
     width: 40%;
   }
-  
-  
   
   .teamImages {
     display: flex;
@@ -64,4 +63,20 @@
   .hero___info .hero___poste {
     font-size: 12px;
     color: #A42593;
+  }
+
+  @media screen and (max-width: 768px) {
+    .aboutContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .valuesContainer {
+      width: 100%;
+    }
+    .teamContainer {
+      margin: 0 auto;
+      width: 90%;
+      overflow-y: scroll;
+    }
   }

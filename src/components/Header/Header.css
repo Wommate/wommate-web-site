@@ -57,3 +57,12 @@
      transform: rotate(15deg);
      transition: 2;
 }
+
+@media screen and (max-width: 768px) {
+
+
+     .header {
+          width: 100%;
+     }
+     
+}

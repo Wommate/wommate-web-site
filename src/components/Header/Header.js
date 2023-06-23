@@ -25,7 +25,7 @@ const Header = () => {
                </div>
                <div className="header__btn">
                     <FontAwesomeIcon className="icon" icon={faFacebook} />
-                    <FontAwesomeIcon className="icon" icon={faTwitter} />
+                     <FontAwesomeIcon className="icon" icon={faTwitter} />
                     <FontAwesomeIcon className="icon" icon={faInstagram} />
                     <FontAwesomeIcon className="icon" icon={faLinkedin} />
                </div>

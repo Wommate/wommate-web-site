@@ -70,3 +70,9 @@
   color: #022179;
   margin-left: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}

@@ -91,3 +91,41 @@
     background: #022179; 
   }
 
+
+  @media screen and (max-width: 768px) {
+    .partenairs__content img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin: 0 10px;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: 0.5s;
+      margin-right: 20px;
+  }
+
+  .slide-btn {
+    background-color: transparent;
+    width: 20PX;
+    position: relative;
+    height: 20PX;
+    border-radius: 50%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border: none;
+  }
+
+  .partenairs__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 75%;
+    height: 150px;
+}
+
+
+}
+

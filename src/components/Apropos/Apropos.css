@@ -12,7 +12,6 @@
      gap: 2%;
      align-items: center;
      margin: 0 auto;
-     flex-wrap: wrap;
      margin-top: -1%;
 }
 
@@ -75,4 +74,12 @@
      margin-top: 5%;
      margin-bottom: 5%;
      box-shadow: 0 0 6px #A42593;
+}
+
+@media screen and (max-width: 768px) {
+     .apropos__content {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+     }
 }
