@@ -10,8 +10,8 @@ import flecheGauche from "../../img/fleche-gauche.png";
 import flecheDroite from "../../img/fleche-droite.png";
 
 const images = [
-     odia,
      logo,
+     odia,
      img2,
      img3,
      img4,
