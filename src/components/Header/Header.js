@@ -36,32 +36,3 @@ const Header = () => {
 
 export default Header;
 
-
-/* 
-const Header = () => {
-     return (
-       <div className="header">
-         <div className="header__logo">
-           <img src={logo} alt="logo" />
-         </div>
-         <div className="header__menu">
-           <ul>
-             <li><Link to="/">Accueil</Link></li>
-             <li><Link to="/partenaires">Partenires</Link></li>
-             <li><Link to="/apropos">A propos</Link></li>
-             <li><Link to="/services">Services</Link></li>
-             <li><Link to="/contact">Contact</Link></li>
-           </ul>
-         </div>
-         <div className="header__btn">
-           <FontAwesomeIcon className="icon" icon={faFacebook} />
-           <FontAwesomeIcon className="icon" icon={faTwitter} />
-           <FontAwesomeIcon className="icon" icon={faInstagram} />
-           <FontAwesomeIcon className="icon" icon={faLinkedin} />
-         </div>
-       </div>
-     );
-   };
-   
-   export default Header;
-    */
