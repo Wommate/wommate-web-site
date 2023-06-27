@@ -56,6 +56,7 @@
      flex-direction: column;
      justify-content: space-between;
      align-items: flex-start;   
+     margin-bottom: 10%;
 }
 
 .form___contact input {
@@ -83,4 +84,34 @@
      font-weight: bold;
      padding: 10px;
      border-radius: 12px;
+}
+
+@media screen and (max-width: 768px) {
+     .contact___container {
+          flex-direction: column;
+     }
+
+     .contact___info___text {
+          width: 100%;
+     }
+     .contact___form {
+          margin-bottom: 10%;
+     }
+
+     .form___contact input {
+          width: 350px;
+          margin: 2% ;
+          height: 30px;
+          border:  1px solid #eae7e7;
+          border-radius: 12px;
+          padding: 2%;
+     }
+     .form___contact textarea {
+          width: 350px;
+          margin: 2% ;
+          height: 50px;
+          border:  1px solid #eae7e7;
+          border-radius: 12px;
+          padding: 2%;
+     }
 }

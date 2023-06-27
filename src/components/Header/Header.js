@@ -13,16 +13,10 @@ const Header = () => {
      return (
           <div className="header">
                <div className="header__logo">
-                    <img src={logo} alt="logo" />
+                    <a href="#"> <img src={logo} alt="logo" /></a>
                </div>
                <div className="header__menu">
                     <ul>
-{/*                          <li>Accueil</li>
-                         <li>Partenires</li>
-                         <li>A propos</li>
-                         <li>Servces</li>
-                         <li>Contact</li> */}
-
                          <li><a href="#" className="lienA">Accueil</a></li>
                          <li><a href="#partenaire" className="lienA">Partenaires</a></li>
                          <li><a href="#apropos" className="lienA">A propos</a></li>
@@ -32,7 +26,7 @@ const Header = () => {
                </div>
                <div className="header__btn">
                     <FontAwesomeIcon className="icon" icon={faFacebook} />
-                    <FontAwesomeIcon className="icon" icon={faTwitter} />
+                     <FontAwesomeIcon className="icon" icon={faTwitter} />
                     <FontAwesomeIcon className="icon" icon={faInstagram} />
                     <FontAwesomeIcon className="icon" icon={faLinkedin} />
                </div>

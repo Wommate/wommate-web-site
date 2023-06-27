@@ -2,8 +2,6 @@ import heroImg from '../../img/heros_img.png';
 import './HeroSection.css';
 
 
-
-
 const HeroSection = () => {
    
      return (

@@ -25,7 +25,8 @@ const Apropos = () => {
                               objectifs professionnels.
                          </p> 
                          <button className="btn">
-                              Voir srvice</button>
+                              <a href="#service" className="lienP">Nos services</a>
+                         </button>
 
                     </div>
                     <div className="apropos__img">

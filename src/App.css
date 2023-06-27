@@ -38,3 +38,12 @@ h2 {
   font-family: 'Inter', sans-serif !important;
 
 }
+
+
+  @media screen and (max-width: 768px) {
+
+    * {
+      box-sizing: border-box;
+    }
+  }
+
