@@ -58,11 +58,11 @@
      transition: 2;
 }
 
-@media screen and (max-width: 768px) {
-
-
-     .header {
-          width: 100%;
-     }
-     
+.lienA{
+     text-decoration: none;
+     color: #000000;
+}
+.lienA:hover{
+     color: #A42593;
+     font-weight: bold;
 }

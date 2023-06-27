@@ -83,3 +83,14 @@
           justify-content: space-between;
      }
 }
+
+.lienP{
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+}
+.lienP:hover{
+     color: #A42593;
+     font-weight: bold;
+     color: #fff;
+}

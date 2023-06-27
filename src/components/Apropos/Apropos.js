@@ -5,7 +5,7 @@ const Apropos = () => {
      return (
           <div className="apropos">
                <div className="apropos__title">
-                    <h1 className="h1">A propos</h1>
+                    <h1 className="h1" id="apropos">A propos</h1>
                </div>
                <div className="apropos__content">
                     <div className="apropos__text">
@@ -25,7 +25,8 @@ const Apropos = () => {
                               objectifs professionnels.
                          </p> 
                          <button className="btn">
-                              Voir srvice</button>
+                              <a href="#service" className="lienP">Nos services</a>
+                         </button>
 
                     </div>
                     <div className="apropos__img">

@@ -4,16 +4,19 @@ import img2 from "../../img/apropos.png";
 import img3 from "../../img/active-solution-logo.png";
 import img4 from "../../img/logo-minamemontre.jpg";
 import img5 from "../../img/logo-bella.jpg";
+import odia from "../../img/odia.jpg"
 import React, { useState } from "react";
 import flecheGauche from "../../img/fleche-gauche.png";
 import flecheDroite from "../../img/fleche-droite.png";
 
 const images = [
      logo,
+     odia,
      img2,
      img3,
      img4,
      img5,
+     
 ];
     
 const Partenairs = () => {
@@ -31,7 +34,7 @@ const Partenairs = () => {
      return (
           <div className="partenairs">
                <div className="partenairs__title">
-                    <h1 className="h1">Partenaires</h1>
+                    <h1 className="h1" id="partenaire">Partenaires</h1>
                </div>
                <div className="carrousel">
                <div className="partenairs__content">
