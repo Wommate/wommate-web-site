@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import libscode from '../../img/libscode.png'
 import bella from '../../img/bella.png'
-import oumar from '../../img/oumar.png'
+import oumar from '../../img/oumar.jpg'
 
 
 const teams = [
