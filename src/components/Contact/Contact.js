@@ -7,7 +7,7 @@ import mapimg from '../../img/map.png'
 const Contact = () => {
      return (
           <div className='contact'>
-               <h1 className='h1'>Contact</h1>
+               <h1 className='h1' id='contact'>Contact</h1>
                <div className='contact___container'>
                     <div className='contact___info'>
                          <h2 className='contact___info___title'>Contactez-nous</h2>

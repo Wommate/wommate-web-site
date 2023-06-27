@@ -8,14 +8,15 @@ const Map = () => {
 
   return (
     <MapContainer center={position} zoom={16} scrollWheelZoom={false} className="map-container">
-      <TileLayer
-        attribution='&copy; <a href="#">Wommate TECH</a> contributors'
+    <TileLayer
+        attribution='&copy; <a href="#">Wommate TECH</a> | Map data  Contribution' /* &copy; <a href="https://leafletjs.com">Leaflet</a> */
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
+    />
+
       <Marker position={position}>
         <Popup>
-        Siège  Wommate TECH. <br />
-        Thoés, Sénégal rue 10
+            Siège  Wommate TECH. <br />
+            Thoés, Sénégal rue 10
         </Popup>
       </Marker>
     </MapContainer>

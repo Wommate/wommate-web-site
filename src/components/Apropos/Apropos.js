@@ -5,7 +5,7 @@ const Apropos = () => {
      return (
           <div className="apropos">
                <div className="apropos__title">
-                    <h1 className="h1">A propos</h1>
+                    <h1 className="h1" id="apropos">A propos</h1>
                </div>
                <div className="apropos__content">
                     <div className="apropos__text">
