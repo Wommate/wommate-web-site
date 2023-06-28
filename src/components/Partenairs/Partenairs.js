@@ -32,7 +32,7 @@ const Partenairs = () => {
           );
      };
      return (
-          <div className="partenairs">
+          <div className="partenairs" >
                <div className="partenairs__title">
                     <h1 className="h1" id="partenaire">Partenaires</h1>
                </div>

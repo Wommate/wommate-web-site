@@ -7,9 +7,10 @@ import Footer from './components/Footer/Footer';
 import Contact from './components/Contact/Contact';
 import Partenairs from './components/Partenairs/Partenairs';
 import Apropos from './components/Apropos/Apropos';
-import Map from  './components/Map/Map';
+import Map from './components/Map/Map';
+import AOS from 'aos';
 
-
+  AOS.init();
 function App() {
   return (
     <div className="App">
