@@ -9,7 +9,7 @@ const Apropos = () => {
      return (
        <div className="apropos">
          <div className="apropos__title">
-           <h1 className="h1" id="apropos">
+           <h1 className="h1" id="apropos" data-aos="zoom-in-up">
              A propos
            </h1>
          </div>
@@ -36,7 +36,7 @@ const Apropos = () => {
                vos objectifs professionnels.
              </p>
              <button className="btn">
-               <a href="#service" className="lienP">
+               <a href="#service" className="lienP" >
                  Nos services
                </a>
              </button>

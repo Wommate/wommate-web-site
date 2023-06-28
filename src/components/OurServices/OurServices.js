@@ -21,21 +21,24 @@ const cardsData = [
     id: 2,
     image: icone2,
     title: " Accompagnement jeunes porteurs de projets",
-    content: "Sivous ",
+    content:
+      "Développez vos idées et concrétisez vos projets grâce à notre accompagnement personnalisé pour les jeunes entrepreneurs ! Que vous ayez une vision novatrice dans le domaine de la technologie, des arts ou des services, nous avons l'expertise et les ressources nécessaires pour vous aider à réussir. Notre programme vous prépare à relever les défis du monde des affaires et à acquérir les compétences qui feront de vous un leader éclairé. Prêt à passer à l'étape suivante ? Cliquez sur \"Voir plus\" pour découvrir tous les détails de notre accompagnement et prendre le contrôle de votre avenir professionnel dès maintenant ! ",
     aos: "fade-down",
   },
   {
     id: 3,
     image: icone3,
     title: "Accompagnement des entreprises",
-    content: "",
+    content:
+      "Boostez votre entreprise grâce à notre accompagnement personnalisé. Que vous ayez besoin de conseils stratégiques, de consultations professionnelles ou de solutions informatiques sur mesure, nous sommes là pour vous aider. Notre équipe possède l'expertise nécessaire pour répondre à vos besoins spécifiques. Que ce soit pour optimiser vos processus internes, améliorer votre présence en ligne ou développer des applications sur mesure, nous sommes prêts à vous accompagner à chaque étape de votre croissance. Découvrez tous les détails de notre offre d'accompagnement et prenez le contrôle de l'avenir de votre entreprise dès maintenant !",
     aos: "fade-left",
   },
   {
     id: 4,
     image: icone4,
     title: "Formation courte durée",
-    content: "",
+    content:
+      "Que vous cherchiez à acquérir de nouvelles compétences professionnelles ou à vous perfectionner dans un domaine spécifique, nos formations courtes sont là pour répondre à vos besoins. En quelques semaines ou mois, vous pouvez développer des compétences concrètes et pratiques qui auront un impact immédiat sur votre carrière. Que ce soit dans le domaine du développement web, du marketing digital ou de l'entrepreneuriat, nos programmes sont conçus pour vous fournir les connaissances et les outils nécessaires pour réussir. Ne laissez pas le temps être un obstacle, investissez dans votre avenir dès maintenant en découvrant tous les détails de nos formations courtes et en faisant le premier pas vers une nouvelle opportunité professionnelle !",
     aos: "fade-right",
   },
 ];
@@ -46,12 +49,12 @@ const OurServices = () => {
  
   return (
     <div className="ourService">
-      <h1 className="h1" id="service">
+      <h1 className="h1" id="service" data-aos="zoom-in-down">
         Nos Services
       </h1>
       <div className="containerServices">
         {cardsData.map((card) => (
-          <div key={card.id} className="card" data-aos={card.aos} >
+          <div key={card.id} className="card" data-aos={card.aos}>
             <div className="cardContent">
               <div className="imageCarte">
                 <div className="img">

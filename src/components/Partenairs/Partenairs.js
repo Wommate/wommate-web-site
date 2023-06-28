@@ -8,17 +8,12 @@ import odia from "../../img/odia.jpg"
 import React, { useState } from "react";
 import flecheGauche from "../../img/fleche-gauche.png";
 import flecheDroite from "../../img/fleche-droite.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-const images = [
-     logo,
-     odia,
-     img2,
-     img3,
-     img4,
-     img5,
-     
-];
-    
+const images = [logo,odia,img2,img3,img4,img5,];
+
+AOS.init();
 const Partenairs = () => {
      const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -32,32 +27,33 @@ const Partenairs = () => {
           );
      };
      return (
-          <div className="partenairs" >
-               <div className="partenairs__title">
-                    <h1 className="h1" id="partenaire">Partenaires</h1>
-               </div>
-               <div className="carrousel">
-               <div className="partenairs__content">
-                    <button onClick={prevSlide} className="slide-btn">
-                         <img src={flecheGauche} alt="fleche-gauche" />
-                    </button>
+       <div className="partenairs">
+         <div className="partenairs__title">
+           <h1 className="h1" id="partenaire" data-aos="zoom-in-up">
+             Partenaires
+           </h1>
+         </div>
+         <div className="carrousel">
+           <div className="partenairs__content">
+             <button onClick={prevSlide} className="slide-btn">
+               <img src={flecheGauche} alt="fleche-gauche" />
+             </button>
 
-                    <div className="partenairs__img">
-                         <img src={images[currentIndex]} alt="logo" />
-                         {
-                              !currentIndex ?
-                              <img src={images[currentIndex + 1]} alt="logo" />
-                              : <img src={images[currentIndex - 1]} alt="logo" />
-                         }
-                    </div>
-                     
-                    <button onClick={nextSlide} className="slide-btn">
-                         <img src={flecheDroite} alt="fleche-droite" />
-                    </button>
-                   
-               </div>
-               </div>
-          </div>
+             <div className="partenairs__img">
+               <img src={images[currentIndex]} alt="logo" />
+               {!currentIndex ? (
+                 <img src={images[currentIndex + 1]} alt="logo" />
+               ) : (
+                 <img src={images[currentIndex - 1]} alt="logo" />
+               )}
+             </div>
+
+             <button onClick={nextSlide} className="slide-btn">
+               <img src={flecheDroite} alt="fleche-droite" />
+             </button>
+           </div>
+         </div>
+       </div>
      );
 };
 

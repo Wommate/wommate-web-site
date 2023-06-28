@@ -40,7 +40,7 @@ const About = () => {
     <div className="about">
       <div className="aboutContainer">
         <div className="valuesContainer" data-aos="zoom-in-down">
-          <h2>Notre mission</h2>
+          <h2 data-aos="zoom-in-up">Notre mission</h2>
           <p className="nosValeurs">
             Wommate accélère la transition vers le numérique. Notre mission est
             d'accompagner toute personne souhaitant acquérir des compétences
@@ -50,7 +50,7 @@ const About = () => {
           </p>
         </div>
         <div className="teamContainer">
-          <h2>Notre équipe</h2>
+          <h2 data-aos="zoom-in-up">Notre équipe</h2>
           <div className="teamImages">
             {teams.map((team) => (
               <div className="hero___img" data-aos={team.aos}>

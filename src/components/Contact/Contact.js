@@ -11,7 +11,7 @@ AOS.init();
 const Contact = () => {
      return (
        <div className="contact">
-         <h1 className="h1" id="contact">
+         <h1 className="h1" id="contact" data-aos="zoom-in-down">
            Contact
          </h1>
          <div className="contact___container">
