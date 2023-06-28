@@ -1,23 +1,86 @@
 .footer {
   background-color: #f0f0f0;
-  padding: 20px;
+  padding: 30px 4%;
+  align-items: center;
   
 }
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+  
 }
 
 .footer-section {
   flex: 1;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 2%;
 }
+.footer-section img {
+  width: 150px;
+  float: left;
+}
+.footer-section .newsletter {
+  margin-top: -5%;
+  margin-left: 8%;
+  font-size: 14px;
+  text-align: left;
+}
+
+.footer-section .form {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 8%;
+  margin-top: 2%;
+}
+.footer-section .form .form-input {
+  width: 100%;
+  height: 30px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-right: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+.footer-section .form .form-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: #A42593;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc;
+  
+}
+.offres {
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.offres:hover {
+  color: #A42593;
+  font-weight: bold;
+}
+
+
 .footer-section  a:hover{
   color: #A42593;
   font-weight: bold;
 }
+
 
 .footer-section h4 {
   margin-bottom: 10px;
@@ -25,47 +88,34 @@
   font-weight: bold;
 }
 
-.social-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.social-links li {
-  margin-bottom: 5px;
-}
-
-.social-links a {
-  color: #333;
+.footer-section a {
   text-decoration: none;
+  color: #000;
 }
-
-.iconRs {
+.footer-reseaux {
+  margin-top: -2%;
+}
+.reseaux {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-}
-.iconRs a:hover {
-  color: #A42593;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 10px;
+  gap: 12px;
 }
 
 .icon {
-  color: #022179;
-  margin: 5px;
-  font-size: 20px;
+  color: #A42593;
+  font-size: 30px;
 }
 
-.footer-section p {
-  margin-bottom: 5px;
+.footer-bottom {
+  background-color: #A42593;
+  padding: 10px 4%;
+  font-size: 14px;
+  color: #061746;
+  font-weight: bold;
+  
 }
 
-.footer-section p a {
-  color: #333;
-  text-decoration: none;
-}
+

@@ -38,6 +38,11 @@
 .header__menu ul li {
      list-style: none;
      margin: 10px;
+     cursor: pointer;
+}
+
+Link {
+     cursor: pointer;
 }
 
 .header__btn {

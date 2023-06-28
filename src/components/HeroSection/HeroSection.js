@@ -5,7 +5,7 @@ import './HeroSection.css';
 const HeroSection = () => {
    
      return (
-          <div className="hero-container">
+          <div className="hero-container" id='hero'>
               <div className="hero__text">
                     <p className='title'>Assure ton<br /> 
                          <span>devenir </span>
