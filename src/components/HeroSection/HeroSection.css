@@ -81,7 +81,6 @@
      width: 150px;
      height: 45px;
      border: 2px solid #A42593;
-     border-radius: 5px;
      background-color: #022179;
      color: #ffffff;
      font-size: 20px;
@@ -119,13 +118,16 @@
 @media screen and (max-width: 768px) {
      .hero-container {
           flex-direction: column;
-          margin-top: 0;
+          margin-top: 66px;
+          padding: O auto;
+          display: flex;
+          flex-direction: column;  
      }
 
      .hero__text {
           width: 100%;
-          height: 50%;
-          margin-top: 10%;
+          height: auto;
+          margin-top: 0;
      }
 
      .hero__text .title {
@@ -148,39 +150,40 @@
 
      .hero__img {
           width: 100%;
-          height: 50%;
-          margin-top: -50%;
+          height: 100%;
+          position: absolute;
           z-index: -1;
      }
 
      .hero__img img {
           width: 100%;
           height: 100%;
+          position: relative;
+          margin: 0 auto;
      }
 
 
-     .hero__text .hero__btn .btns-2 {
+     .hero__text .hero__btn .btns__2 {
           width: 150px;
           height: 45px;
           border: none;
-          border-radius: 5px;
           background-color: #A42593;
-          color: #022179;
-          font-size: 20px;
-          font-weight: 700;
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
           cursor: pointer;
           transition: 0.5s;
           border-radius:  30px;
-          margin-left: 3%;
+          margin-left: 4%;
+          padding: 10px;
      }
      .hero__text .hero__btn .btns {
           width: 150px;
           height: 45px;
           border: 2px solid #A42593;
-          border-radius: 5px;
           background-color: transparent;
           color: #ffffff;
-          font-size: 20px;
+          font-size: 14px;
           font-weight: 700;
           cursor: pointer;
           transition: 0.5s;
