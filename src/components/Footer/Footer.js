@@ -15,13 +15,7 @@ const Footer = () => {
     window.location.href = "mailto:wommateTech@example.com";
   };
 
-  const handlePhoneClick = () => {
-    window.location.href = "tel:+22100000000";
-  };
-
-  const handleWhatsAppClick = () => {
-    window.location.href = "https://wa.me/22100000000";
-  };
+ 
 
   return (
     <>

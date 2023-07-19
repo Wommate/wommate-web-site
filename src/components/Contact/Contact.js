@@ -2,6 +2,8 @@ import './Contact.css'
 import call from '../../img/phone.png';
 import mail from '../../img/mail.png'
 import mapimg from '../../img/map.png'
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -9,6 +11,29 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_z9q8d3n",
+        "template_1xjq3ye",
+        form.current,
+        "voh91TVYAX-Xg4SJG"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Message envoyé avec succès");
+          window.location.reload();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
      return (
        <div className="contact">
          <h1 className="h1" id="contact" data-aos="zoom-in-down">
@@ -39,9 +64,9 @@ const Contact = () => {
            </div>
            <div className="contact___form" data-aos="fade-down">
              <h2>Nous envoyer un message</h2>
-             <form className="form___contact">
-               <input type="text" placeholder="Prenom & nom" />
-               <input type="mail" placeholder="contact@wommate.com" />
+             <form className="form___contact" ref={form} onSubmit={sendEmail}>
+               <input type="text" placeholder="Prenom & nom" name="name" required/>
+               <input type="mail" placeholder="contact@wommate.com" name="email" required/>
                <textarea row="10" col="10">
                  Message
                </textarea>
