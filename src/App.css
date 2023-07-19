@@ -8,6 +8,7 @@
 *{
   overflow-y: visible;
   font-family: 'Inter', sans-serif !important;
+  box-sizing: border-box;
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
@@ -39,10 +40,15 @@ h2 {
 }
 
 
+
   @media screen and (max-width: 768px) {
 
     * {
       box-sizing: border-box;
+      overflow-x: hidden;
     }
+
+   
+
   }
 

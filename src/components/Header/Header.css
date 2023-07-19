@@ -13,6 +13,7 @@
      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      top: 0;
      opacity: 0.9;
+     overflow: hidden;
 }
 
 .header__logo {
@@ -71,3 +72,94 @@ Link {
      color: #A42593;
      font-weight: bold;
 }
+
+.mobile__hamberger {
+     visibility: hidden;
+     display: none;
+}
+.header__menu__mobile {
+     visibility: hidden;
+     display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+     .header {
+          width: 100%;
+          box-sizing: border-box;
+          margin: 0;
+          padding-left: 4%;
+          padding-right: 4%;
+     }
+     
+     .mobile__hamberger{
+          visibility: visible;
+          display: block;
+     }
+
+     .header__menu {
+          visibility: hidden;
+          display: none;
+     }
+
+     .header__btn {
+          visibility: hidden;
+          display: none;
+     }
+
+     .header__menu__mobile {
+          visibility: visible;
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          margin-top: 10%;
+     }
+
+     
+     .header__menu__mobile ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 2%;
+          width: 100%;
+          background: #fff;
+          position: absolute;
+          opacity: 0.9;
+          z-index: 5;
+          margin: 22px auto;
+     }
+
+     .header__menu__mobile ul li {
+          list-style: none;
+          margin: 10px auto;
+          cursor: pointer;
+     }
+
+     .header__menu__mobile ul li .lienA {
+          text-decoration: none;
+          color: #022179;
+          font-size: 20px;
+     }
+
+     .header__menu__mobile ul li .lienA:hover {
+          color: #A42593;
+          font-weight: bold;
+     }
+
+     .icon__mobile {
+          color: #022179;
+          font-size: 30px;
+          cursor: pointer;
+          display: flex;
+          flex-direction: row;
+     }
+     .icon__mobile .icon {
+          margin: 10px;
+          width: 20px;
+     }
+
+}
+     
+
