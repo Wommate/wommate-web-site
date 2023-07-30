@@ -6,11 +6,28 @@ import { useState } from "react";
 import "./Header.css";
 import {
   faFacebook,
-  faTwitter,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
+const facebook = () => {
+  window.open(
+    "https://www.facebook.com/profile.php?id=100095123988642",
+    "_blank"
+  );
+}
+const linkedin = () => {
+  window.open(
+    "https://www.linkedin.com/company/wommate/?viewAsMember=true",
+    "_blank"
+  );
+}
+const instagram = () => {
+  window.open(
+    "https://www.facebook.com/profile.php?id=100095123988642",
+    "_blank"
+  );
+}
 
 const Header = () => {
   
@@ -94,10 +111,9 @@ const Header = () => {
           </ul>
         </div>
         <div className="header__btn">
-          <FontAwesomeIcon className="icon" icon={faFacebook} />
-          <FontAwesomeIcon className="icon" icon={faTwitter} />
-          <FontAwesomeIcon className="icon" icon={faInstagram} />
-          <FontAwesomeIcon className="icon" icon={faLinkedin} />
+            <FontAwesomeIcon className="icon" icon={faFacebook}  onClick={facebook} />
+          <FontAwesomeIcon className="icon" icon={faInstagram}  onClick={linkedin} />
+          <FontAwesomeIcon className="icon" icon={faLinkedin}  onClick={linkedin} />
         </div>
         {/* Menu mobile */}
         <div className="mobile__hamberger">
@@ -109,7 +125,7 @@ const Header = () => {
         </div>
       </div>
       {menuMobile && (
-        <div className="header__menu__mobile">
+        <div className="header__menu__mobile" >
           <ul>
             <li>
               <Link
@@ -172,10 +188,9 @@ const Header = () => {
               </Link>
             </li>
             <li className="icon__mobile">
-              <FontAwesomeIcon className="icon" icon={faFacebook} />
-              <FontAwesomeIcon className="icon" icon={faTwitter} />
-              <FontAwesomeIcon className="icon" icon={faInstagram} />
-              <FontAwesomeIcon className="icon" icon={faLinkedin} />
+              <FontAwesomeIcon className="icon" icon={faFacebook}  onClick={facebook}/> 
+              <FontAwesomeIcon className="icon" icon={faInstagram}  onClick={linkedin}/>
+              <FontAwesomeIcon className="icon" icon={faLinkedin}  onClick={linkedin}/>
             </li>
           </ul>
         </div>

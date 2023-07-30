@@ -91,6 +91,7 @@ Link {
           margin: 0;
           padding-left: 4%;
           padding-right: 4%;
+          
      }
      
      .mobile__hamberger{
@@ -125,7 +126,7 @@ Link {
           padding-top: 2%;
           width: 100%;
           background: #fff;
-          position: absolute;
+          position: fixed;
           opacity: 0.9;
           z-index: 5;
           margin: 22px auto;

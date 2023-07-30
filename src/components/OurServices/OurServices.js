@@ -3,9 +3,16 @@ import icone1 from '../../img/icone1.png';
 import icone2 from '../../img/icone2.png';
 import icone3 from '../../img/icone3.png';
 import icone4 from '../../img/icone4.png';
+import dev from    '../../img/dev.png';
+import marketing from '../../img/marketing.png';
 import './OurServices.css';
+import InscriptionForm from '../InscriptionForm/InscriptionForm';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useState } from 'react';
+import Modal from 'react-modal';
+
+
 
 
 const cardsData = [
@@ -43,9 +50,37 @@ const cardsData = [
   },
 ];
 
+const modal = {
+  overlay: {
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    zIndex: '1000'
+  },
+  content: {
+    width: '45%',
+    height: '70%',
+    margin: 'auto',
+    backgroundColor: '#fff',
+    borderRadius: '10px',
+    padding: '20px',
+    zIndex: '1000',
+   
+    
+  }
+}
+
 AOS.init();
 
 const OurServices = () => {
+
+  const [modalIsOpen, setModalIsOpen] = useState(false)
+
+  const openModal = () => {
+    setModalIsOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalIsOpen(false)
+  }
  
   return (
     <div className="ourService">
@@ -67,11 +102,51 @@ const OurServices = () => {
                 <h2 className="cardTitle">{card.title}</h2>
               </div>
               <p className="cardText">{card.content}</p>
-              <button className="card___btn">Voir plus</button>
+              {/* <button className="card___btn">Voir plus</button> */}
             </div>
           </div>
         ))}
       </div>
+      <h1 className="h1" id="service" data-aos="zoom-in-down">
+        Formations disponibles
+      </h1>
+
+      <div className="container__formation__disponible">
+        <div className="formation__dev">
+          <img src={dev} alt="formation" className="formation__img" />
+          <h3 className="formation__title">Développement Web</h3>
+          <p className='formation__text'>
+            Créer votre propre site web, trouver votre premier emploie 
+            , ou bien développer votre propre bussiness en ligne.
+          </p>
+          <div className='formation__btn__section'>
+            <button className="btn__formation">
+              Brochure ⬇ </button>
+            <button className="btn__formation__enrole" onClick={openModal}>
+              S'inscrire </button>
+          </div>
+        </div>
+        <div className="formation__dev">
+          <img src={marketing} alt="formation" className="formation__img" />
+          <h3 className="formation__title">Marketing digitale</h3>
+          <p className='formation__text'>
+            Devenez autonome en marketing digitale,
+            apprenez à créer des campagnes publicitaires,
+            et à gérer vos réseaux sociaux.
+          </p>
+          <div className='formation__btn__section'>
+            <button className="btn__formation">
+              Brochure ⬇ </button>
+            <button className="btn__formation__enrole" onClick={openModal}>
+              S'inscrire </button>
+          </div>
+        </div>
+      </div>
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={modal}>
+        <button onClick={closeModal} className="btn__close__modal">X</button>
+
+        <InscriptionForm closeModal={closeModal} />
+      </Modal>
     </div>
   );
 };

@@ -73,6 +73,85 @@
   color: #022179;
   margin-left: 5px;
 }
+.container__formation__disponible{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.container__formation__disponible .formation__dev{
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
+      padding: 5px;
+      border-radius: 12px 12px 0 0;
+}
+.container__formation__disponible img{
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.container__formation__disponible .formation__text{
+  width: 250px;
+  font-size: 10px;
+  text-align: justify;
+  padding: 0 10px;
+  border-radius: 12px;
+}
+
+.formation__btn__section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn__formation{
+  background: transparent;
+  color: #A42593;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  float: left;
+}
+.btn__formation__enrole{
+  background: #A42593;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 10px;
+ 
+}
+
+.formation__title{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: start;
+  margin-bottom: 5px;
+  color: #022179;
+}
+
+.btn__close__modal {
+  background: transparent;
+  color: #A42593;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-size: 24px;
+  margin-right: 10px;
+  margin-top: 0;
+}
+
 
 @media screen and (max-width: 768px) {
   .card {

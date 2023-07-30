@@ -1,0 +1,54 @@
+.inscriptionForm{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: space-around;
+     margin: 10%  auto;
+}
+
+.form__section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+
+.form__section{
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     justify-content: space-around;
+     margin-bottom: 10px;
+     gap: 30px;
+}
+
+.form__section input {
+     width: 250px;
+     height: 30px;
+     border: 1px solid #d1d1d1;
+     border-radius: 5px;
+     padding: 5px;
+}
+.form__section select {
+     width: 250px;
+     height: 30px;
+     border: 1px solid #d1d1d1;
+     border-radius: 5px;
+     padding: 5px;
+}
+.form__section .checkbox__section {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+.form__section .checkbox__section__item {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     gap: 1px;
+     float: left;
+}
+.form__section .checkbox__section__item input {
+     width: 20px;
+     height: 20px;
+}
