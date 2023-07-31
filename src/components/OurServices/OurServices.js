@@ -6,13 +6,34 @@ import icone4 from '../../img/icone4.png';
 import dev from    '../../img/dev.png';
 import marketing from '../../img/marketing.png';
 import './OurServices.css';
-import InscriptionForm from '../InscriptionForm/InscriptionForm';
+// import InscriptionForm from '../InscriptionForm/InscriptionForm';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useState } from 'react';
 import Modal from 'react-modal';
 
 
+
+const OpenBrochureDev = () => {
+
+  const brochureDevFile = "/brochuredev.pdf";
+  const link = document.createElement("a");
+  link.href = brochureDevFile;
+  link.target = "_blank"; 
+  link.download = "brochuredev.pdf";
+
+  link.dispatchEvent(new MouseEvent("click"));
+}
+const OpenBrochureMarketing = () => {
+
+  const brochureDevFile = "/marketing_brochure.pdf";
+  const link = document.createElement("a");
+  link.href = brochureDevFile;
+  link.target = "_blank"; 
+  link.download = "brochureMarketing.pdf";
+
+  link.dispatchEvent(new MouseEvent("click"));
+}
 
 
 const cardsData = [
@@ -56,17 +77,19 @@ const modal = {
     zIndex: '1000'
   },
   content: {
-    width: '45%',
-    height: '70%',
+    width: '80%',
+    height: '85%',
     margin: 'auto',
     backgroundColor: '#fff',
     borderRadius: '10px',
     padding: '20px',
     zIndex: '1000',
-   
-    
-  }
+    position: 'relative',
+  },
+  
 }
+
+
 
 AOS.init();
 
@@ -115,37 +138,54 @@ const OurServices = () => {
         <div className="formation__dev">
           <img src={dev} alt="formation" className="formation__img" />
           <h3 className="formation__title">Développement Web</h3>
-          <p className='formation__text'>
-            Créer votre propre site web, trouver votre premier emploie 
-            , ou bien développer votre propre bussiness en ligne.
+          <p className="formation__text">
+            Créer votre propre site web, trouver votre premier emploie , ou bien
+            développer votre propre bussiness en ligne.
           </p>
-          <div className='formation__btn__section'>
-            <button className="btn__formation">
-              Brochure ⬇ </button>
+          <div className="formation__btn__section">
+            <button className="btn__formation" onClick={OpenBrochureDev}>
+              Brochure ⬇{" "}
+            </button>
             <button className="btn__formation__enrole" onClick={openModal}>
-              S'inscrire </button>
+              S'inscrire{" "}
+            </button>
           </div>
         </div>
         <div className="formation__dev">
           <img src={marketing} alt="formation" className="formation__img" />
           <h3 className="formation__title">Marketing digitale</h3>
-          <p className='formation__text'>
-            Devenez autonome en marketing digitale,
-            apprenez à créer des campagnes publicitaires,
-            et à gérer vos réseaux sociaux.
+          <p className="formation__text">
+            Devenez autonome en marketing digitale, apprenez à créer des
+            campagnes publicitaires, et à gérer vos réseaux sociaux.
           </p>
-          <div className='formation__btn__section'>
-            <button className="btn__formation">
-              Brochure ⬇ </button>
+          <div className="formation__btn__section">
+            <button className="btn__formation" onClick={OpenBrochureMarketing}>
+              Brochure ⬇{" "}
+            </button>
             <button className="btn__formation__enrole" onClick={openModal}>
-              S'inscrire </button>
+              S'inscrire{" "}
+            </button>
           </div>
         </div>
       </div>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal} style={modal}>
-        <button onClick={closeModal} className="btn__close__modal">X</button>
+        <div className="closeModal">
+          <button onClick={closeModal} className="btn__close__modal">
+            X
+          </button>
+        </div>
 
-        <InscriptionForm closeModal={closeModal} />
+        {/* <InscriptionForm closeModal={closeModal} /> */}
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfPTbks_bfuADNIEdE_UAVfyPdHJWVeCkIwZ6b5Ng1JlVKXAQ/viewform?embedded=true"
+          width="100%"
+          height="1317"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Chargement…
+        </iframe>
       </Modal>
     </div>
   );
