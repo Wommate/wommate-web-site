@@ -22,12 +22,12 @@ const linkedin = () => {
     "_blank"
   );
 }
-const instagram = () => {
-  window.open(
-    "https://www.facebook.com/profile.php?id=100095123988642",
-    "_blank"
-  );
-}
+// const instagram = () => {
+//   window.open(
+//     "https://www.facebook.com/profile.php?id=100095123988642",
+//     "_blank"
+//   );
+// }
 
 const Header = () => {
   
