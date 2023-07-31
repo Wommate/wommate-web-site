@@ -178,6 +178,7 @@ const OurServices = () => {
         {/* <InscriptionForm closeModal={closeModal} /> */}
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfPTbks_bfuADNIEdE_UAVfyPdHJWVeCkIwZ6b5Ng1JlVKXAQ/viewform?embedded=true"
+          title="formulaire d'inscription"
           width="100%"
           height="1317"
           frameborder="0"
