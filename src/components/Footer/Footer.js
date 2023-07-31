@@ -4,11 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "../../img/logo_wommate.png";
 import {
   faFacebook,
-  faTwitter,
   faInstagram,
   faLinkedin,
-  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+
 
 const Footer = () => {
   const handleEmailClick = () => {
@@ -79,32 +78,24 @@ const Footer = () => {
             <h4>RESEAUX</h4>
             <div className="reseaux">
               <div title="Facebook">
-                <a href="#">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100095123988642"
+                  target="blank"
+                >
                   <FontAwesomeIcon icon={faFacebook} className="icon" />
                 </a>
               </div>
               <div title="Instagram">
-                <a href="#">
-                  <FontAwesomeIcon icon={faTwitter} className="icon" />
-                </a>
-              </div>
-              <div title="Instagram">
-                <a href="#">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100095123988642"
+                  target="blank"
+                >
                   <FontAwesomeIcon icon={faInstagram} className="icon" />
                 </a>
               </div>
               <div title="Linkedin">
-                <a href="#">
+                <a href="https://www.linkedin.com/company/wommate/?viewAsMember=true">
                   <FontAwesomeIcon icon={faLinkedin} className="icon" />
-                </a>
-              </div>
-              <div title="Whatsapp">
-                <a
-                  href="https://wa.me/+221776289674"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faWhatsapp} className="icon" />
                 </a>
               </div>
             </div>
