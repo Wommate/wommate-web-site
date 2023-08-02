@@ -30,7 +30,7 @@ const OpenBrochureMarketing = () => {
   const link = document.createElement("a");
   link.href = brochureDevFile;
   link.target = "_blank"; 
-  link.download = "brochureMarketing.pdf";
+  link.download = "marketing_brochure.pdf";
 
   link.dispatchEvent(new MouseEvent("click"));
 }
