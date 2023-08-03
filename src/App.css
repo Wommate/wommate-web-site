@@ -40,6 +40,10 @@ h2 {
 }
 
 
+img {
+  object-fit: cover !important;
+    overflow: hidden !important;
+}
 
   @media screen and (max-width: 768px) {
 
@@ -47,6 +51,7 @@ h2 {
       box-sizing: border-box;
       overflow-x: hidden;
     }
+
 
    
 
