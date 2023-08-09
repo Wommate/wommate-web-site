@@ -59,3 +59,12 @@ const Partenairs = () => {
 };
 
 export default Partenairs;
+
+
+
+
+/* 
+<marquee behavior="scroll" direction="left" width="100%" bgcolor="#EEEEEE">
+   <h2>Texte défilant horizontalement</h2>
+</marquee>
+ */
