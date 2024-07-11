@@ -103,4 +103,9 @@
       width: 90%;
       overflow-y: scroll;
     }
+    .teamImages{
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
   }

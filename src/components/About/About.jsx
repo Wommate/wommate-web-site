@@ -14,14 +14,14 @@ const teams = [
     id: 1,
     nom: "Oumar DIAGNE",
     photo: oumar,
-    poste: "Développeur web IOT, ingénieur SI",
+    poste: "Développeur full-stack, ingénieur SI",
     aos: "fade-right",
   },
   {
     id: 2,
-    nom: "Maimouna DIALLO",
+    nom: "Abdoulaye SECK",
     photo: bella,
-    poste: "Développeur web, coach formatrice",
+    poste: "Chargé de la communication",
     aos: "fade-left"
   },
   {
@@ -29,6 +29,13 @@ const teams = [
     nom: "Libasse THIAM",
     photo: libscode,
     poste: "Développeur web, ingénieur SI",
+    aos: "fade-up"
+  },
+  {
+    id: 4,
+    nom: "Nassirou SOW",
+    photo: libscode,
+    poste: "Chargé de la communication",
     aos: "fade-up"
   },
 ];
