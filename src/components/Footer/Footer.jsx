@@ -21,7 +21,7 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-newsletter footer-section">
-            <img src={logo} alt="logo" className="logo" />
+            {/* <img src={logo} alt="logo" className="logo" /> */}
             <p className="newsletter">
               Ne manquez plus aucune mise à jour ! Inscrivez-vous à notre
               newsletter dès maintenant.
@@ -31,6 +31,7 @@ const Footer = () => {
                 type="email"
                 className="form-input"
                 placeholder="Votre email"
+                required
               />
               <button
                 type="submit"
@@ -104,7 +105,7 @@ const Footer = () => {
       </footer>
       <div className="footer-bottom">
         <p className="footer-bottom-text">
-          &copy; 2023 Wommate. All rights reserved.
+          Copyright © 2024  Wommate. All Rights Reserved.
         </p>
       </div>
     </>

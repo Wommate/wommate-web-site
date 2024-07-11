@@ -66,7 +66,7 @@ const Contact = () => {
              <h2>Nous envoyer un message</h2>
              <form className="form___contact" ref={form} onSubmit={sendEmail}>
                <input type="text" placeholder="Prenom & nom" name="name" required/>
-               <input type="mail" placeholder="contact@wommate.com" name="email" required/>
+               <input type="email" value="contact@wommate.com" name="email" required disabled />
                <textarea row="10" col="10">
                  Message
                </textarea>

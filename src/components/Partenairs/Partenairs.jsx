@@ -6,13 +6,11 @@ import img3 from "../../img/active-solution-logo.png";
 import img4 from "../../img/logo-minamemontre.jpg";
 import img5 from "../../img/logo-bella.jpg";
 import odia from "../../img/odia.jpg";
-import flecheGauche from "../../img/fleche-gauche.png";
-import flecheDroite from "../../img/fleche-droite.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const images = [logo, odia, img2, img3, img4, img5];
-const slideInterval = 3000; // Intervalle en millisecondes entre chaque slide
+const slideInterval = 3000; 
 
 const Partenairs = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
