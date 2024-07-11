@@ -29,9 +29,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 5% auto;
+    margin: 2%; 
     width: 100%;
-    height: 150px;
+    height: 80px;
 }
 .slide-btn {
   background-color: transparent;
